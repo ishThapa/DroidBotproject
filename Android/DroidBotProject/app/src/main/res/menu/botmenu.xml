@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Select Scale Type">
+        <menu>
+            <item android:title="Fit Center" android:id="@+id/fitCenterImg"/>
+            <item android:title="Center" android:id="@+id/centerImg"/>
+            <item android:title="Center Crop" android:id="@+id/centerCropImg"/>
+            <item android:title="Stretch" android:id="@+id/stretchImg"/>
+        </menu>
+    </item>
+    <item android:title="Rotate Screen" android:id="@+id/rotateClockWise"/>
+    <item android:id="@+id/settingBot"  android:title="Setting"/>
+</menu>

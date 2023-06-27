@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur"
+    tools:context=".BotChamber">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/render"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/relativeLayout2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout2">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/torchBox"
+            android:layout_alignTop="@+id/right"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/torch_a"
+            android:onClick="toggleTorch" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/forward"
+            android:src="@drawable/forward"
+            android:clickable="true"
+            android:background="@drawable/btntrigger"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/torchBox"
+            android:layout_alignStart="@+id/torchBox"
+            android:paddingTop="5dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/left"
+            android:layout_alignTop="@+id/torchBox"
+            android:layout_toLeftOf="@+id/torchBox"
+            android:layout_toStartOf="@+id/torchBox"
+            android:src="@drawable/left"
+            android:clickable="true"
+            android:background="@drawable/btntrigger" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/right"
+            android:layout_below="@+id/forward"
+            android:layout_toRightOf="@+id/torchBox"
+            android:layout_toEndOf="@+id/torchBox"
+            android:src="@drawable/right"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:background="@drawable/btntrigger" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/backward"
+            android:layout_below="@+id/torchBox"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/backward"
+            android:clickable="true"
+            android:background="@drawable/btntrigger" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/relativeLayout3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/camleft"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" android:src="@drawable/cambtnl"
+                android:background="@drawable/btntrigger"
+                android:onClick="cameMover"
+                android:padding="4dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/camright"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/camleft" android:src="@drawable/cambtnr"
+                android:background="@drawable/btntrigger"
+                android:onClick="cameMover"
+                android:padding="4dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

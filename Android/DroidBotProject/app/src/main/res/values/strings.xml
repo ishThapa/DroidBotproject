@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Droid-Bot</string>
+    <string-array name="frameRate">
+        <item>20 FPS</item>
+        <item>10 FPS</item>
+        <item>5 FPS</item>
+    </string-array>
+</resources>

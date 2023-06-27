@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ref" android:id="@+id/refresh" android:title="" app:showAsAction="always"/>
+    <item android:icon="@drawable/cam" android:id="@+id/camMode" android:title="Cam Mode" app:showAsAction="withText"/>
+    <item android:icon="@drawable/setting" android:id="@+id/setting" android:title="Setting" app:showAsAction="withText"/>
+</menu>
